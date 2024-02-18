@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
-  "name": "my-app",
-=======
   "name": "app",
->>>>>>> 67964f4 (changes for Profile and Settings Page)
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -20,20 +16,12 @@
     "firestore": "^1.1.6",
     "mysql2": "^3.9.1",
     "promise": "^8.3.0",
-<<<<<<< HEAD
-    "puppeteer": "^22.0.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-google-button": "^0.7.2",
-    "react-router-dom": "^6.22.0",
-=======
     "puppeteer": "^22.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-button": "^0.7.2",
     "react-router": "^6.22.1",
     "react-router-dom": "^6.22.1",
->>>>>>> 67964f4 (changes for Profile and Settings Page)
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -60,13 +48,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "author": "",
-  "license": "ISC"
-=======
   }
->>>>>>> 67964f4 (changes for Profile and Settings Page)
 }
