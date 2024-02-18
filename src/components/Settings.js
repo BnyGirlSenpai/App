@@ -7,12 +7,8 @@ const Settings = () => {
     
     const { user } = UserAuth();
     const collectionUserRef = collection(db, "users");
-<<<<<<< HEAD
-
-=======
     const [isButtonClicked, setIsButtonClicked] = useState(false);
     
->>>>>>> 67964f4 (changes for Profile and Settings Page)
     const [profileData, setProfileData] = useState({
         username: '',
         email: '',
@@ -50,30 +46,11 @@ const Settings = () => {
         }
       };
   
-<<<<<<< HEAD
-    const handleSaveProfile = async () => {
-=======
       const handleSaveProfile = async () => {
->>>>>>> 67964f4 (changes for Profile and Settings Page)
         try {
             const q = query(collectionUserRef, where("uid", "==", user.uid));
             const docs = await getDocs(q);
 
-<<<<<<< HEAD
-        if (docs.docs.length !== 0) {
-            const userDocRef = docs.docs[0].ref;
-
-            // Extract fields that are not empty from profileData
-            const updatedProfileData = Object.fromEntries(
-                Object.entries(profileData)
-            );
-
-            await updateDoc(userDocRef, updatedProfileData);
-            console.log('Profile data updated successfully');
-        } else {
-            console.log("User not found!");
-        }
-=======
             if (docs.docs.length !== 0) {
                 const userDocRef = docs.docs[0].ref;
 
@@ -93,7 +70,6 @@ const Settings = () => {
             } else {
                 console.log("User not found!");
             }
->>>>>>> 67964f4 (changes for Profile and Settings Page)
         } catch (error) {
             console.error('Error updating profile data:', error);
         }
@@ -166,11 +142,6 @@ return (
             </div>
             </div>
             <div className="mt-5 text-center">
-<<<<<<< HEAD
-            <button className="btn btn-primary profile-button" type="button" onClick={handleSaveProfile}>
-                Save Profile
-            </button>
-=======
             <button
                     className={`btn ${isButtonClicked ? 'btn-success' : 'btn-primary'} profile-button`}
                     type="button"
@@ -178,7 +149,6 @@ return (
                 >
                     {isButtonClicked ? 'Profile Saved' : 'Save Profile'}
                 </button>
->>>>>>> 67964f4 (changes for Profile and Settings Page)
             </div>
         </div>
     </div>
